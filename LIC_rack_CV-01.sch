@@ -9652,6 +9652,8 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
+<text x="162.56" y="5.08" size="1.016" layer="94">Zmena-&gt; Upraven pin z PB2 na PB4
+pro ovládání SS</text>
 </plain>
 <instances>
 <instance part="IC2" gate="G$1" x="71.12" y="109.22"/>
@@ -10026,9 +10028,9 @@ DIN A4, landscape with location and doc. field</description>
 </net>
 <net name="PX_SS" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="(INT1)PD3"/>
-<wire x1="91.44" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
-<label x="96.52" y="73.66" size="1.016" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="(SS)PB4"/>
+<wire x1="91.44" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
+<label x="96.52" y="121.92" size="1.27" layer="95" font="vector" ratio="12" xref="yes"/>
 </segment>
 </net>
 <net name="UART_ON_GREEN" class="0">
@@ -10043,19 +10045,6 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="IC3" gate="G$1" pin="PC1(ADC1)"/>
 <wire x1="226.06" y1="93.98" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
 <label x="233.68" y="93.98" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PX_IRQ" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="(AIN0/INT2)PB2"/>
-<wire x1="91.44" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
-<label x="96.52" y="116.84" size="1.016" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="(SS)PB4"/>
-<wire x1="91.44" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -10459,13 +10448,6 @@ DIN A4, landscape with location and doc. field</description>
 <label x="205.74" y="109.22" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PX_IRQ_RFID" class="0">
-<segment>
-<pinref part="J1" gate="-A18" pin="MS"/>
-<wire x1="220.98" y1="114.3" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
-<label x="205.74" y="114.3" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="RXD_RFID" class="0">
 <segment>
 <pinref part="J1" gate="-C20" pin="MS"/>
@@ -10844,4 +10826,10 @@ DIN A4, landscape with location and doc. field</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
