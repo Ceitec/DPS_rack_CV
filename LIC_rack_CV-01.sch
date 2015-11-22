@@ -10059,8 +10059,10 @@ pro ovládání SS</text>
 <text x="241.3" y="147.32" size="1.778" layer="97" font="vector">SYS</text>
 <text x="241.3" y="78.74" size="1.778" layer="97" font="vector">SYS</text>
 <text x="238.76" y="134.62" size="1.778" layer="97" font="vector">POWER</text>
-<text x="238.76" y="119.38" size="1.778" layer="97" font="vector">SPI_RFID</text>
+<text x="238.76" y="114.3" size="1.778" layer="97" font="vector">SPI_RFID</text>
 <text x="238.76" y="104.14" size="1.778" layer="97" font="vector">UART_RFID</text>
+<wire x1="228.6" y1="120.65" x2="254" y2="120.65" width="0.4064" layer="97" style="longdash"/>
+<text x="238.76" y="124.46" size="1.778" layer="97" font="vector">SPI_RFID</text>
 </plain>
 <instances>
 <instance part="GND2" gate="1" x="238.76" y="27.94"/>
